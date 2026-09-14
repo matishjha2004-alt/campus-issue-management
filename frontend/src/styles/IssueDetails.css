@@ -1,0 +1,271 @@
+.issue-details-page {
+    min-height: 100vh;
+    background: #f1f5f9;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.issue-details-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+.issue-details-header {
+    margin-bottom: 25px;
+}
+
+.issue-details-header h1 {
+    margin: 0 0 8px;
+    font-size: 32px;
+    color: #0f172a;
+}
+
+.issue-details-header p {
+    margin: 0;
+    color: #64748b;
+}
+
+/* Issue Card */
+
+.issue-details-card {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
+    margin-bottom: 25px;
+}
+
+.issue-details-title {
+    margin: 0 0 20px;
+    font-size: 28px;
+    color: #0f172a;
+}
+
+.issue-details-description {
+    color: #475569;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* Issue Information */
+
+.issue-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.issue-info-item {
+    padding: 15px;
+    background: #f8fafc;
+    border-radius: 10px;
+}
+
+.issue-info-label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+.issue-info-value {
+    font-size: 15px;
+    font-weight: 600;
+    color: #334155;
+}
+
+/* Status */
+
+.issue-status {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: #e0f2fe;
+    color: #0369a1;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* Priority */
+
+.priority-low {
+    color: #15803d;
+}
+
+.priority-medium {
+    color: #b45309;
+}
+
+.priority-high {
+    color: #dc2626;
+}
+
+/* Comments */
+
+.comments-card {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
+}
+
+.comments-header {
+    margin-bottom: 25px;
+}
+
+.comments-header h2 {
+    margin: 0 0 6px;
+    font-size: 24px;
+    color: #0f172a;
+}
+
+.comments-header p {
+    margin: 0;
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* Comment Form */
+
+.comment-form {
+    margin-bottom: 30px;
+}
+
+.comment-form textarea {
+    width: 100%;
+    min-height: 110px;
+    box-sizing: border-box;
+    padding: 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    background: #f8fafc;
+    font-family: inherit;
+    font-size: 15px;
+    resize: vertical;
+    outline: none;
+    transition: 0.2s;
+}
+
+.comment-form textarea:focus {
+    background: white;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+.comment-button {
+    margin-top: 12px;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 9px;
+    background: #2563eb;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.comment-button:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+/* Messages */
+
+.comment-message {
+    margin-top: 12px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    background: #f0fdf4;
+    color: #15803d;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Comment List */
+
+.comments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.comment-item {
+    padding: 18px;
+    background: #f8fafc;
+    border-radius: 10px;
+    border-left: 4px solid #2563eb;
+}
+
+.comment-author {
+    margin: 0 0 6px;
+    font-size: 15px;
+    color: #0f172a;
+}
+
+.comment-text {
+    margin: 0 0 8px;
+    color: #475569;
+    line-height: 1.6;
+}
+
+.comment-date {
+    color: #94a3b8;
+    font-size: 12px;
+}
+
+.no-comments {
+    padding: 30px;
+    background: #f8fafc;
+    border-radius: 10px;
+    text-align: center;
+    color: #64748b;
+}
+
+/* Loading / Error */
+
+.issue-loading,
+.issue-error {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    text-align: center;
+    color: #64748b;
+}
+
+/* Mobile */
+
+@media (max-width: 650px) {
+
+    .issue-details-page {
+        padding: 25px 15px;
+    }
+
+    .issue-details-card,
+    .comments-card {
+        padding: 22px 18px;
+    }
+
+    .issue-details-header h1 {
+        font-size: 27px;
+    }
+
+    .issue-details-title {
+        font-size: 23px;
+    }
+
+    .issue-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .comment-button {
+        width: 100%;
+    }
+}

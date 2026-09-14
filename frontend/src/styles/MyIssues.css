@@ -1,0 +1,144 @@
+.my-issues-page {
+    min-height: 100vh;
+    background: #f1f5f9;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.my-issues-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.my-issues-header {
+    margin-bottom: 25px;
+}
+
+.my-issues-header h1 {
+    margin: 0 0 8px;
+    font-size: 32px;
+    color: #0f172a;
+}
+
+.my-issues-header p {
+    margin: 0;
+    color: #64748b;
+}
+
+.issues-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.issue-card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(15, 23, 42, 0.07);
+    transition: 0.2s;
+}
+
+.issue-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.1);
+}
+
+.issue-title {
+    margin: 0 0 15px;
+    font-size: 22px;
+}
+
+.issue-title a {
+    color: #1d4ed8;
+    text-decoration: none;
+}
+
+.issue-title a:hover {
+    text-decoration: underline;
+}
+
+.issue-description {
+    color: #475569;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.issue-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.issue-badge {
+    display: inline-block;
+    padding: 6px 11px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.category-badge {
+    background: #eff6ff;
+    color: #1d4ed8;
+}
+
+.location-badge {
+    background: #f8fafc;
+    color: #475569;
+}
+
+.status-badge {
+    background: #e0f2fe;
+    color: #0369a1;
+}
+
+.priority-low {
+    background: #f0fdf4;
+    color: #15803d;
+}
+
+.priority-medium {
+    background: #fffbeb;
+    color: #b45309;
+}
+
+.priority-high {
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+.issue-footer {
+    padding-top: 15px;
+    border-top: 1px solid #e2e8f0;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.no-issues {
+    background: white;
+    padding: 40px;
+    border-radius: 14px;
+    text-align: center;
+    color: #64748b;
+    box-shadow: 0 5px 20px rgba(15, 23, 42, 0.07);
+}
+
+@media (max-width: 650px) {
+    .my-issues-page {
+        padding: 25px 15px;
+    }
+
+    .my-issues-header h1 {
+        font-size: 27px;
+    }
+
+    .issue-card {
+        padding: 20px;
+    }
+
+    .issue-title {
+        font-size: 20px;
+    }
+}

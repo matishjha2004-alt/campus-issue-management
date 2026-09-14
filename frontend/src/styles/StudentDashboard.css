@@ -1,0 +1,99 @@
+.student-dashboard {
+    min-height: 100vh;
+    background: #f5f7fb;
+    padding: 40px;
+}
+
+.dashboard-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.dashboard-header {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.dashboard-header h1 {
+    margin: 0 0 10px;
+    font-size: 30px;
+}
+
+.dashboard-header h2 {
+    margin: 0 0 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.user-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.user-info p {
+    margin: 0;
+    padding: 12px;
+    background: #f8fafc;
+    border-radius: 8px;
+}
+
+.dashboard-section {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.dashboard-section h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.dashboard-actions {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.dashboard-button {
+    border: none;
+    padding: 13px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    background: #2563eb;
+    color: white;
+    transition: 0.2s;
+}
+
+.dashboard-button:hover {
+    transform: translateY(-1px);
+    opacity: 0.9;
+}
+
+.logout-button {
+    background: #dc2626;
+}
+
+@media (max-width: 700px) {
+    .student-dashboard {
+        padding: 20px;
+    }
+
+    .user-info {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-actions {
+        flex-direction: column;
+    }
+
+    .dashboard-button {
+        width: 100%;
+    }
+}
